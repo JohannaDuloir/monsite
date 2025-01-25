@@ -1,0 +1,41 @@
+/* :root {} */
+
+.modak-regular {
+    font-family: "Modak", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.fira-sans-thin {
+    font-family: "Fira Sans Thin", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+    height: 100vh;
+}
+  
+a {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="%23000000" fill="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+}
+
+h1, h2, h3 {
+    line-height: 1.4;
+    max-width: 28ch;
+    font-weight: 400;
+    font-family: "Modak";
+    font-size: 245px;
+}
+
+p {
+    font-family: 'Fira Sans Thin';
+    font-weight: 100;
+    font-style: normal;
+}
+
+footer {
+    background-color: aliceblue;
+    padding: 150px;
+}

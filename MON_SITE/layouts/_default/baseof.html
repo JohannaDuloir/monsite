@@ -1,7 +1,22 @@
 <html lang="{{ site.Language }}">
-    <body>
-      <main>
+
+<head>
+    {{ partial "header.html" . }}
+</head>
+<div class="circle-cursor"></div>
+
+<a href="/">Accueil</a>
+<a href="/works">Portfolio</a>
+<a href="/blog">Blog</a>
+<a href="/contact">Contact</a>
+
+<body>
+    <main>
         {{ block "main" . }}{{ end }}
-      </main>
-    </body>
+    </main>
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
+</body>
+
 </html>

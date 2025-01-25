@@ -7,5 +7,26 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/</guid>
+      <description>&lt;h1 id=&#34;test-blog&#34;&gt;TEST BLOG&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;discutons-ensemble-smile&#34;&gt;Discutons ensemble :smile:&lt;/h1&gt;&#xA;&lt;p&gt;Je suis à votre écoute pour réaliser votre projet !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio</title>
+      <link>http://localhost:1313/works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/works/</guid>
+      <description>&lt;h1 id=&#34;portfolio&#34;&gt;Portfolio&lt;/h1&gt;&#xA;&lt;p&gt;Je suis à votre écoute pour réaliser votre projet !&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
