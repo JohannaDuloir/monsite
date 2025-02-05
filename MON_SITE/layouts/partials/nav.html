@@ -1,0 +1,10 @@
+<nav>
+    <img src="/media/logo-j-lambda.svg" class="logo">
+    <ul>
+        {{ range .Site.Menus.header }}
+        <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>

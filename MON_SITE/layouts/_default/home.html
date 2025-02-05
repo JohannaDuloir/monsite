@@ -1,10 +1,19 @@
 {{ define "main" }}
-  <h1>Johanna Lambda</h1>
-  <a href="/blog">Consultez mon blog</a>
-  <div>
-    <p>Web designer and developer.<br />
-      A digital minimalist in search of less complexity.<br />
-    </p>
-  </div>
   {{ .Content }}
+  <section class="presentation">
+    <div class="presentation-background"></div>
+    <div class="presentation-section1">
+      <p><a href="home.html">Johanna Lambda</a></p>
+      <a href="contact.html">Papotons</a>
+    </div>
+    <div class="presentation-section2">
+      <div>
+        <h1>Johanna Lambda</h1>
+          <p>Meuf banale qui aime plein de choses mais surtout concevoir des sites internet</p>
+        </div>
+    </div>
+    <div class="presentation-footer">
+      <p>— Coder avec une banalité soignée</p>
+    </div>
+  </section>
 {{ end }}

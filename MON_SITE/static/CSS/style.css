@@ -1,4 +1,144 @@
-/* :root {} */
+:root {
+    --color1: #000000;
+    --color2: #ffe62e;
+    --color3: #FFFFFF;
+}
+
+@font-face {
+    font-family: "Jofont";
+    src: url("/fonts/Jo_wrote_a_lovesong.ttf");
+}
+
+@font-face {
+    font-family: "Elliot";
+    src: url("../fonts/Elliot-Regular.ttf.otf");
+}
+
+@font-face {
+    font-family: "Flotte";
+    src: url("../fonts/flottenheimerDEMO.otf");
+}
+
+/*_______________________________________________________________________________________________________*/
+/*__________________________________________________NAVIGATION___________________________________________*/
+/*_______________________________________________________________________________________________________*/
+
+header nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Flotte";
+    transform: translate(0, -50%) rotate(-90deg);
+    display: flex;
+    flex-direction: row;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--color3);
+}
+
+header nav ul:before {
+    color:#ffe62e;
+}
+
+header {
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    background-color: var(--color1);
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    /* padding: 0 10px ; */
+    padding: 1.2vw;
+}
+
+header .logo {
+    width: 100px;
+    position: absolute;
+    top: 0;
+}
+
+/*_______________________________________________________________________________________________________*/
+/*____________________________________________________HOME_______________________________________________*/
+/*_______________________________________________________________________________________________________*/
+
+.presentation-background {
+    background-image: url(/media/couv-jo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.presentation-section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.presentation-section1 p a {
+    font-family: 'Jofont';
+    color: var(--color1);
+    font-size: 20px;
+    line-height: 1;
+}
+
+.presentation-section2 {
+    padding-top: 25vh;
+}
+
+.presentation-section2 h1 {
+    font-size: 10em;
+    font-weight: 300;
+    font-family: "Flotte";
+    margin: 0;
+    margin-bottom: 60px;
+    color:var(--color2);
+    line-height: 1;
+    display: grid;
+    justify-content: center;
+}
+.presentation-section2 p {
+   font-size: 1em;
+   letter-spacing: .10em;
+   text-transform: uppercase;
+   line-height: 1.5;
+   font-weight: 400;
+   color:var(--color2);
+   display: flex;
+   justify-content: center;
+   background: black;
+   padding: 10px;
+}
+
+.presentation-section2 span {
+    font-family: 'Modak';
+    font-size: 20px;
+    color: var(--color1);
+}
+
+.presentation-footer {
+    padding-top: 37vh;
+}
+
+.presentation-footer p {
+    font-size: 12px;
+}
+
+/*_______________________________________________________________________________________________________*/
 
 .modak-regular {
     font-family: "Modak", serif;
@@ -12,30 +152,46 @@
     font-style: normal;
 }
 
+
 body {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
     height: 100vh;
+    margin: 0;
+}
+
+main {
+    margin-left: 100px;
+    padding: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
 }
   
 a {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="%23000000" fill="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
-h1, h2, h3 {
-    line-height: 1.4;
+h2, h3 {
+    /* line-height: 1.4; */
     max-width: 28ch;
     font-weight: 400;
     font-family: "Modak";
-    font-size: 245px;
+    font-size: 50px;
 }
 
 p {
-    font-family: 'Fira Sans Thin';
-    font-weight: 100;
+    font-family: 'Fira Sans';
+    font-weight: 300;
     font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 footer {
     background-color: aliceblue;
-    padding: 150px;
+    width: 80%;
+    /* padding: 20px; */
 }

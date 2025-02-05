@@ -1,3 +1,21 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+[menus]
+    [[menus.header]]
+        name = 'Accueil'
+        url = '/'
+        weight = 10
+    [[menus.header]]
+        name = 'Portfolio'
+        url = '/works'
+        weight = 20
+    [[menus.header]]
+        name = 'Blog'
+        url = '/blog'
+        weight = 30
+    [[menus.header]]
+        name = 'Contact'
+        url = '/contact'
+        weight = 40

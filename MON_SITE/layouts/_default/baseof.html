@@ -1,16 +1,14 @@
 <html lang="{{ site.Language }}">
 
 <head>
-    {{ partial "header.html" . }}
+    {{ partial "head.html" . }}
 </head>
 <div class="circle-cursor"></div>
 
-<a href="/">Accueil</a>
-<a href="/works">Portfolio</a>
-<a href="/blog">Blog</a>
-<a href="/contact">Contact</a>
-
 <body>
+    <header>
+        {{ partial "nav.html" . }}
+    </header>
     <main>
         {{ block "main" . }}{{ end }}
     </main>
