@@ -39,14 +39,14 @@ header nav ul {
 }
 
 header nav ul:before {
-    color:#ffe62e;
+    color:#130101;
 }
 
 header {
     position: fixed;
     width: 100px;
     height: 100%;
-    background-color: var(--color1);
+    background-color: var(--color2);
 }
 
 nav {
