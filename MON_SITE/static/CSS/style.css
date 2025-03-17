@@ -1,197 +1,337 @@
+/*Alors comme ça on vient voir comment j'ai codé ? Bienvenue inspecteur*/
+
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 :root {
     --color1: #000000;
     --color2: #ffe62e;
     --color3: #FFFFFF;
 }
 
-@font-face {
-    font-family: "Jofont";
-    src: url("/fonts/Jo_wrote_a_lovesong.ttf");
+/*______________________________________________________________________________________Polices d'écriture*/
+
+/*________________________________________________________________________________________________________*/
+
+h1 {
+    font-family: "Times New Roman";
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color1);
 }
 
-@font-face {
-    font-family: "Elliot";
-    src: url("../fonts/Elliot-Regular.ttf.otf");
+h2 {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color1);
 }
 
-@font-face {
-    font-family: "Flotte";
-    src: url("../fonts/flottenheimerDEMO.otf");
+p {
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--color1)
+}
+
+/*_______________________________________________________________________________________________________*/
+/*__________________________________________________BODY___________________________________________*/
+/*_______________________________________________________________________________________________________*/
+
+body {
+    background-image: url(../media/background-noise.png);
+    width: auto;
+    overflow-x: hidden;
+    margin: 20px;
+}
+
+header {
+    position: fixed;
 }
 
 /*_______________________________________________________________________________________________________*/
 /*__________________________________________________NAVIGATION___________________________________________*/
 /*_______________________________________________________________________________________________________*/
-
-header nav ul {
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: "Flotte";
-    transform: translate(0, -50%) rotate(-90deg);
-    display: flex;
-    flex-direction: row;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    color: var(--color3);
-}
-
-header nav ul:before {
-    color:#ffe62e;
-}
-
-header {
-    position: fixed;
-    width: 100px;
-    height: 100%;
-    background-color: var(--color1);
-}
-
 nav {
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex;
+    font-family: 'Courier New';
+    font-weight: bold;
+    font-size: 12px;
 }
 
-header nav ul li {
-    /* padding: 0 10px ; */
-    padding: 1.2vw;
+nav ul {
+    list-style-type: none;
 }
 
-header .logo {
-    width: 100px;
-    position: absolute;
-    top: 0;
+nav ul li {
+    padding: 5px 0px 5px 0px;
 }
+
+nav ul a {
+    text-decoration: none;
+    color: var(--color1);
+
+}
+
+/* Shuffle effect
+.shuffle {
+    transition: none;
+}
+
+a.bouton-noir:hover{
+    transition: transform 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+} */
+
 
 /*_______________________________________________________________________________________________________*/
 /*____________________________________________________HOME_______________________________________________*/
 /*_______________________________________________________________________________________________________*/
 
-.presentation-background {
-    background-image: url(/media/couv-jo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
 
-.presentation-section1 {
+
+/*_______________________________________________________________________________________________________*/
+/*____________________________________________SECTION 1 SLIDER PRES_______________________________________________*/
+/*_______________________________________________________________________________________________________*/
+
+.section-presentation {
+    min-height: 100vh;
+    border-bottom: 1px solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.presentation-section1 p a {
-    font-family: 'Jofont';
-    color: var(--color1);
-    font-size: 20px;
-    line-height: 1;
-}
-
-.presentation-section2 {
-    padding-top: 25vh;
-}
-
-.presentation-section2 h1 {
-    font-size: 10em;
-    font-weight: 300;
-    font-family: "Flotte";
-    margin: 0;
-    margin-bottom: 60px;
-    color:var(--color2);
-    line-height: 1;
-    display: grid;
+    align-self: center;
     justify-content: center;
-}
-.presentation-section2 p {
-   font-size: 1em;
-   letter-spacing: .10em;
-   text-transform: uppercase;
-   line-height: 1.5;
-   font-weight: 400;
-   color:var(--color2);
-   display: flex;
-   justify-content: center;
-   background: black;
-   padding: 10px;
+    flex-direction: column;
 }
 
-.presentation-section2 span {
-    font-family: 'Modak';
-    font-size: 20px;
-    color: var(--color1);
+h1 div span {
+    filter: blur(8px);
+    font-family: 'myriad pro';
+    font-size: 150px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.7;
+    letter-spacing: -5px;
+    margin-bottom: 2rem;
 }
 
-.presentation-footer {
-    padding-top: 37vh;
-}
-
-.presentation-footer p {
+span.tiny-title {
+    display: flex;
+    justify-content: center;
     font-size: 12px;
+    font-family: 'Courier New';
+    font-weight: bold;
+}
+
+/* h1.texture-grain::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../media/noise-pattern.png);
+    background-repeat: repeat;
+    pointer-events: none;
+} */
+
+/*_______________________________________________________________________________________________________*/
+/*____________________________________________SECTION 2 - JOHANNA________________________________________*/
+/*_______________________________________________________________________________________________________*/
+.section-johanna {
+    padding: 6rem;
+    border-bottom: 1px solid black;
+}
+
+.section-johanna .description span {
+    font-size: 150px;
+    font-family: "Arial";
+    font-weight: bold;
+    text-transform: uppercase;
+    display: grid;
+    justify-items: end;
+}
+
+
+.section-johanna .description span:nth-child(2) {
+    color: red;
+    filter: blur(6px);
 }
 
 /*_______________________________________________________________________________________________________*/
+/*____________________________________________SECTION BLOG____________________________________*/
+/*_______________________________________________________________________________________________________*/
 
-.modak-regular {
-    font-family: "Modak", serif;
-    font-weight: 300;
-    font-style: normal;
+/* .section-blog {
+    padding: 6rem 6rem 15rem 6rem;
+    display: flex;
 }
 
-.fira-sans-thin {
-    font-family: "Fira Sans Thin", serif;
-    font-weight: 100;
-    font-style: normal;
+.section-blog img {
+    width: 700px;
+    height: 800px;
+    object-fit: cover;
 }
 
+.section-blog h2 {
+    font-size: 200px;
+    line-height: 0;
+    margin-left: -220px;
+} */
 
-body {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
-    height: 100vh;
-    margin: 0;
-}
 
-main {
-    margin-left: 100px;
-    padding: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100%;
-}
-  
-a {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="%23000000" fill="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
+/*_______________________________________________________________________________________________________*/
+/*____________________________________________SECTION CONTACT____________________________________*/
+/*_______________________________________________________________________________________________________*/
+/* .section-contact {
+    padding: 6rem;
+    background-color: var(--color2);
 }
 
-h2, h3 {
-    /* line-height: 1.4; */
-    max-width: 28ch;
-    font-weight: 400;
-    font-family: "Modak";
-    font-size: 50px;
+.section-contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-p {
-    font-family: 'Fira Sans';
-    font-weight: 300;
-    font-style: normal;
+.svg-mouton {
+    height: 400px;
+    margin-top: -250px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-footer {
-    background-color: aliceblue;
-    width: 80%;
-    /* padding: 20px; */
-}
+.section-contact h2 {
+    font-size: 100px;
+    line-height: 0;
+    color: var(--color1);
+    text-align: center;
+} */
